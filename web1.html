@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/44ce511e97.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../생활코딩 겁나빠른 웹레시피/사진중심 홈페이지/reset.css">
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+        
+        a{
+            text-decoration: none;
+            color: inherit;
+        }
+        .wrap{
+            /* height: 1000px; */
+        }
+        #header{
+            width: 93rem;
+            background-color: black;
+            color: yellow;
+            position: fixed;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 2;
+        }
+        #header nav{
+            width: 100%;
+            height: 100%;
+            display: inline-block;
+            display: inline-flex;
+            padding: 1rem;
+            box-sizing: border-box;
+            justify-content: center;
+            align-items: center;
+            padding-top: 1.8rem;
+            padding-bottom: 1.8rem;
+            
+        }
+        #header div{
+            width: 25%;
+            margin: 0 auto;
+            text-align: center;
+        }
+        #header div.nav_left{
+            margin-left: 0;
+            position: relative;
+        }
+        #header div.nav_left ul{
+            position: absolute;
+            left: 0.3rem;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        #header div.nav_left li:nth-child(2) h3{
+            font-size: 1.5rem;
+        }
+        #header div.nav_left ul li:nth-child(1){
+            font-size: 1.5rem;
+        }
+        #header div.nav_right{
+            margin-right: 0;
+            position: relative;
+        }
+        #header div.nav_right ul{
+            position: absolute;
+            right: 0.3rem;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        #header div.nav_center{
+            width: 100%;
+        }
+        #header div ul{
+            display: inline-flex;
+            text-align: center;
+            align-items: center;
+        }
+        #header div ul li{
+            margin-left: 1rem;
+            margin-right: 1rem;
+
+        }
+        #header div ul li .label{
+            display: none;
+        }
+        #header div ul li a{
+            display: inline-block;
+            display: inline-flex;
+            font-family: 'Bebas Neue', cursive;
+        }
+        /* part_1 */
+        .part_1{
+            width: 100%;
+            position: relative;
+        }
+        .part_1 .img{
+            background: url(../img/01.jpg) no-repeat center/cover;
+            background-attachment: fixed;
+            overflow: hidden;
+            height: 100vh;
+            background-color: wheat;
+            background-blend-mode: darken;
+        }
+        .part_1 p{
+            text-align: center;
+            max-width: 50rem;
+            font-size: 2rem;
+            color: yellow;
+            text-shadow: 2px 2px 1px black;
+            z-index: 1;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .part_2{
+            width: 100%;
+            position: relative;
+        }
+        .part_2 .img{
+            background: url(../img/02.jpg) no-repeat center/cover;
+            width: 100%;
+            height: 100vh;
+            background-attachment: fixed;
+        }
+        .part_2 p{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            max-width: 50rem;
+            font-size: 2rem;
+            color: yellow;
+            text-shadow: 2px 2px 1px black;
+            text-align: center;
+        }
+        /* part_3 */
+        .part_3{
+            width: 300vw;
+            transition: transform 0.5s;
+            position: relative;
+        }
+        .part_3 .container{
+            width: 100vw;
+            float: left;
+        }
+        .part_3 .container img{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <header id="header">
+            <nav>
+                <div class="nav_left">
+                    <ul>
+                        <li><a href="#"><i class="fa-solid fa-bars"></i><span class="label">MENU</span></a></li>
+                        <li><a href="#"><h3>VINTAGEONE</h3></a></li>
+                    </ul>
+                </div>
+                <div class="nav_center">
+                    <ul>
+                        <li><a href="#">BRAND ZONE</a></li>
+                        <li><a href="#">CASHMERE</a></li>
+                        <li><a href="#">LINEN</a></li>
+                        <li><a href="#">SET UP</a></li>
+                        <li><a href="#">WOMAN</a></li>
+                        <li><a href="#">MAN</a></li>
+                        <li><a href="#">ACCESSORY/BAG</a></li>
+                        <li><a href="#">KIDS</a></li>
+                    </ul>
+                </div>
+                <div class="nav_right">
+                    <ul>
+                        <li><a href="#"><input type="text"><span class="label">underbar</span></a></li>
+                        <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i><span class="label">search</span></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <section class="part_1">
+            <a href="#">
+                <div class="img">
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero iste similique, explicabo possimus quisquam dolore vitae aliquam nisi neque suscipit?
+                </p>
+            </a>
+        </section>
+        <section class="part_2">
+            <div class="img"></div>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis excepturi amet deserunt accusamus nulla accusantium eum, tempora nisi sed harum!
+            </p>
+        </section>
+        <div style="overflow: hidden;">
+            <section class="part_3">
+                <div class="container">
+                    <img src="../img/03.jpg" alt="" srcset="">
+                </div>
+                <div class="container">
+                    <img src="../img/04.jpg" alt="" srcset="">
+                </div>
+                <div class="container">
+                    <img src="../img/05.jpg" alt="" srcset="">
+                </div>
+            </section>
+        </div>
+
+        <button class="버튼1">1</button>
+        <button class="버튼2">2</button>
+        <button class="버튼3">3</button>
+    </div>
+
+    <script>
+        document.querySelector('.버튼2').addEventListener('click', function(){
+            document.querySelector('.part_3').style.transform = 'translate(-100vw)';
+        });
+        document.querySelector('.버튼3').addEventListener('click', function(){
+            document.querySelector('.part_3').style.transform = 'translate(-200vw)';
+        });
+        document.querySelector('.버튼1').addEventListener('click', function(){
+            document.querySelector('.part_3').style.transform = 'translate(0vw)';
+        });
+
+
+        // 1.다음/이전 버튼어떻게?
+        // 2.사진많아지면?(그림/버튼이 몇개있든 잘 동작하게 하려면?)
+    </script>
+</body>
+</html>
